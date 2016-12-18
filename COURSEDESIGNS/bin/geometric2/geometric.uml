@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="geometric">
+  <packagedElement xmi:type="uml:Package" xmi:id="_RZ7g0D35EeaQ3sAvXpQG2A" name="geometric2">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_RePZED35EeaQ3sAvXpQG2A" name="GeometricObject">
+      <ownedOperation xmi:id="_Rf8pQj35EeaQ3sAvXpQG2A" name="draw" visibility="public" isAbstract="true"/>
+      <ownedOperation xmi:id="_Rf8pQz35EeaQ3sAvXpQG2A" name="erase" visibility="public" isAbstract="true"/>
+      <ownedOperation xmi:id="_Rf8pRD35EeaQ3sAvXpQG2A" name="getArea" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_Rf8pRT35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Rf8pRj35EeaQ3sAvXpQG2A" name="getPerimeter" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_Rf8pRz35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Rf8pSD35EeaQ3sAvXpQG2A" name="writeToFile" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_Rf8pST35EeaQ3sAvXpQG2A" name="f"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_RecNYD35EeaQ3sAvXpQG2A" name="Serializable"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SbfEcD35EeaQ3sAvXpQG2A" name="TestGeometricObject2">
+      <ownedOperation xmi:id="_Sg1egD35EeaQ3sAvXpQG2A" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_Sg1egT35EeaQ3sAvXpQG2A" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sg1egj35EeaQ3sAvXpQG2A" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sg1egz35EeaQ3sAvXpQG2A"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_SiYWoD35EeaQ3sAvXpQG2A" name="RandomCreateGeometricObject" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_SiYWoT35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_SidPIT35EeaQ3sAvXpQG2A" name="readObjectFromFile" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_SidPIj35EeaQ3sAvXpQG2A" name="return" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_SiiHoD35EeaQ3sAvXpQG2A" name="testCricleSetRadius" visibility="public" isStatic="true"/>
+      <ownedOperation xmi:id="_SinnMD35EeaQ3sAvXpQG2A" name="testTriangleSetSides" visibility="public" isStatic="true"/>
+      <ownedOperation xmi:id="_Siu78D35EeaQ3sAvXpQG2A" name="testRectangleSetSides" visibility="public" isStatic="true"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ThQZsD35EeaQ3sAvXpQG2A" name="Rectangle" clientDependency="_TlgnoT35EeaQ3sAvXpQG2A _Tlgnoz35EeaQ3sAvXpQG2A">
+      <ownedAttribute xmi:id="_TlqYkT35EeaQ3sAvXpQG2A" name="high" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_TlqYkj35EeaQ3sAvXpQG2A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TlqYkz35EeaQ3sAvXpQG2A" name="width" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_TlqYlD35EeaQ3sAvXpQG2A"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_TlgnoT35EeaQ3sAvXpQG2A" name="GeometricObject" client="_ThQZsD35EeaQ3sAvXpQG2A">
+        <supplier xmi:type="uml:Interface" href="../../geometric.uml#_TlgnoD35EeaQ3sAvXpQG2A"/>
+        <contract href="../../geometric.uml#_TlgnoD35EeaQ3sAvXpQG2A"/>
+      </interfaceRealization>
+      <interfaceRealization xmi:id="_Tlgnoz35EeaQ3sAvXpQG2A" name="Serializable" client="_ThQZsD35EeaQ3sAvXpQG2A">
+        <supplier xmi:type="uml:Interface" href="../../geometric.uml#_Tlgnoj35EeaQ3sAvXpQG2A"/>
+        <contract href="../../geometric.uml#_Tlgnoj35EeaQ3sAvXpQG2A"/>
+      </interfaceRealization>
+      <ownedOperation xmi:id="_TlzigD35EeaQ3sAvXpQG2A" name="getHigh" visibility="public">
+        <ownedParameter xmi:id="_TlzigT35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Tlzigj35EeaQ3sAvXpQG2A" name="getWidth" visibility="public">
+        <ownedParameter xmi:id="_Tlzigz35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_TlzihD35EeaQ3sAvXpQG2A" name="setHigh" visibility="public">
+        <ownedParameter xmi:id="_TlzihT35EeaQ3sAvXpQG2A" name="high">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Tlzihj35EeaQ3sAvXpQG2A" name="setWidth" visibility="public">
+        <ownedParameter xmi:id="_Tlzihz35EeaQ3sAvXpQG2A" name="width">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Tl9TgD35EeaQ3sAvXpQG2A" name="draw" visibility="public"/>
+      <ownedOperation xmi:id="_Tl9TgT35EeaQ3sAvXpQG2A" name="erase" visibility="public"/>
+      <ownedOperation xmi:id="_Tl9Tgj35EeaQ3sAvXpQG2A" name="getArea" visibility="public">
+        <ownedParameter xmi:id="_Tl9Tgz35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_TmHEgD35EeaQ3sAvXpQG2A" name="getPerimeter" visibility="public">
+        <ownedParameter xmi:id="_TmHEgT35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_TmHEgz35EeaQ3sAvXpQG2A" name="toString" visibility="public">
+        <ownedParameter xmi:id="_TmHEhD35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_TmHEhj35EeaQ3sAvXpQG2A" name="writeToFile" visibility="public">
+        <ownedParameter xmi:id="_TmHEhz35EeaQ3sAvXpQG2A" name="f"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Ux9zoD35EeaQ3sAvXpQG2A" name="MyObjectOutputStream">
+      <generalization xmi:id="_U2RE0T35EeaQ3sAvXpQG2A" general="_U2RE0D35EeaQ3sAvXpQG2A"/>
+      <ownedOperation xmi:id="_U2RE0j35EeaQ3sAvXpQG2A" name="writeStreamHeader" visibility="protected"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_U2RE0D35EeaQ3sAvXpQG2A" name="ObjectOutputStream"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YOSwkj35EeaQ3sAvXpQG2A" name="Circle" clientDependency="_YRkHAT35EeaQ3sAvXpQG2A _YRkHAz35EeaQ3sAvXpQG2A">
+      <ownedAttribute xmi:id="_YRkHBT35EeaQ3sAvXpQG2A" name="PI" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_YRkHBj35EeaQ3sAvXpQG2A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_YRvGID35EeaQ3sAvXpQG2A" name="radius" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_YRvGIT35EeaQ3sAvXpQG2A"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_YRkHAT35EeaQ3sAvXpQG2A" name="GeometricObject" client="_YOSwkj35EeaQ3sAvXpQG2A">
+        <supplier xmi:type="uml:Interface" href="../../geometric.uml#_YRkHAD35EeaQ3sAvXpQG2A"/>
+        <contract href="../../geometric.uml#_YRkHAD35EeaQ3sAvXpQG2A"/>
+      </interfaceRealization>
+      <interfaceRealization xmi:id="_YRkHAz35EeaQ3sAvXpQG2A" name="Serializable" client="_YOSwkj35EeaQ3sAvXpQG2A">
+        <supplier xmi:type="uml:Interface" href="../../geometric.uml#_YRkHAj35EeaQ3sAvXpQG2A"/>
+        <contract href="../../geometric.uml#_YRkHAj35EeaQ3sAvXpQG2A"/>
+      </interfaceRealization>
+      <ownedOperation xmi:id="_YRvGIj35EeaQ3sAvXpQG2A" name="draw" visibility="public"/>
+      <ownedOperation xmi:id="_YRvGIz35EeaQ3sAvXpQG2A" name="setRadius" visibility="public">
+        <ownedParameter xmi:id="_YRvGJD35EeaQ3sAvXpQG2A" name="radius">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_YRvGJT35EeaQ3sAvXpQG2A" name="getRadius" visibility="public">
+        <ownedParameter xmi:id="_YRvGJj35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_YR43ID35EeaQ3sAvXpQG2A" name="erase" visibility="public"/>
+      <ownedOperation xmi:id="_YR43IT35EeaQ3sAvXpQG2A" name="getArea" visibility="public">
+        <ownedParameter xmi:id="_YR43Ij35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_YR43Iz35EeaQ3sAvXpQG2A" name="getPerimeter" visibility="public">
+        <ownedParameter xmi:id="_YR43JD35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_YSCoID35EeaQ3sAvXpQG2A" name="toString" visibility="public">
+        <ownedParameter xmi:id="_YSCoIT35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_YSDPMT35EeaQ3sAvXpQG2A" name="writeToFile" visibility="public">
+        <ownedParameter xmi:id="_YSDPMj35EeaQ3sAvXpQG2A" name="f"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lP-eMj35EeaQ3sAvXpQG2A" name="Triangle" clientDependency="_lTRCwT35EeaQ3sAvXpQG2A _lTRp0T35EeaQ3sAvXpQG2A">
+      <ownedAttribute xmi:id="_lTV7QD35EeaQ3sAvXpQG2A" name="side1" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_lTV7QT35EeaQ3sAvXpQG2A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lTcB4D35EeaQ3sAvXpQG2A" name="side2" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_lTcB4T35EeaQ3sAvXpQG2A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lTiIgD35EeaQ3sAvXpQG2A" name="side3" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_lTiIgT35EeaQ3sAvXpQG2A"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_lTRCwT35EeaQ3sAvXpQG2A" name="GeometricObject" client="_lP-eMj35EeaQ3sAvXpQG2A">
+        <supplier xmi:type="uml:Interface" href="../../geometric.uml#_lTRCwD35EeaQ3sAvXpQG2A"/>
+        <contract href="../../geometric.uml#_lTRCwD35EeaQ3sAvXpQG2A"/>
+      </interfaceRealization>
+      <interfaceRealization xmi:id="_lTRp0T35EeaQ3sAvXpQG2A" name="Serializable" client="_lP-eMj35EeaQ3sAvXpQG2A">
+        <supplier xmi:type="uml:Interface" href="../../geometric.uml#_lTRp0D35EeaQ3sAvXpQG2A"/>
+        <contract href="../../geometric.uml#_lTRp0D35EeaQ3sAvXpQG2A"/>
+      </interfaceRealization>
+      <ownedOperation xmi:id="_lTnBAD35EeaQ3sAvXpQG2A" name="getSide1" visibility="public">
+        <ownedParameter xmi:id="_lTnBAT35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_lTqrYD35EeaQ3sAvXpQG2A" name="getSide2" visibility="public">
+        <ownedParameter xmi:id="_lTqrYT35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_lUKaoD35EeaQ3sAvXpQG2A" name="getSide3" visibility="public">
+        <ownedParameter xmi:id="_lUKaoT35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_lUKaoj35EeaQ3sAvXpQG2A" name="setSide1" visibility="public">
+        <ownedParameter xmi:id="_lUKaoz35EeaQ3sAvXpQG2A" name="side1">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_lUoUsD35EeaQ3sAvXpQG2A" name="setSide2" visibility="public">
+        <ownedParameter xmi:id="_lUoUsT35EeaQ3sAvXpQG2A" name="side2">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_lUoUsj35EeaQ3sAvXpQG2A" name="setSide3" visibility="public">
+        <ownedParameter xmi:id="_lUoUsz35EeaQ3sAvXpQG2A" name="side3">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_lUyFsD35EeaQ3sAvXpQG2A" name="getArea" visibility="public">
+        <ownedParameter xmi:id="_lUyFsT35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_lUyFsj35EeaQ3sAvXpQG2A" name="getPerimeter" visibility="public">
+        <ownedParameter xmi:id="_lUyFsz35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_lUyFtT35EeaQ3sAvXpQG2A" name="toString" visibility="public">
+        <ownedParameter xmi:id="_lUyFtj35EeaQ3sAvXpQG2A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_lU9E0D35EeaQ3sAvXpQG2A" name="draw" visibility="public"/>
+      <ownedOperation xmi:id="_lVAvMD35EeaQ3sAvXpQG2A" name="erase" visibility="public"/>
+      <ownedOperation xmi:id="_lVFnsD35EeaQ3sAvXpQG2A" name="writeToFile" visibility="public">
+        <ownedParameter xmi:id="_lVFnsT35EeaQ3sAvXpQG2A" name="f" type="_lVFAoD35EeaQ3sAvXpQG2A"/>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Rbx68D35EeaQ3sAvXpQG2A" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Rbx68T35EeaQ3sAvXpQG2A" name="io"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_SdvuQz35EeaQ3sAvXpQG2A" name="util"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_lVFAoD35EeaQ3sAvXpQG2A" name="File"/>
+</uml:Model>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="uml">
+  <packagedElement xmi:type="uml:Package" xmi:id="_BMAFgEPfEeaMtams4z8rMA" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_BMAskEPfEeaMtams4z8rMA" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMAskUPfEeaMtams4z8rMA" name="Serializable"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMChwEPfEeaMtams4z8rMA" name="BufferedInputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMChwUPfEeaMtams4z8rMA" name="BufferedOutputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMDI0EPfEeaMtams4z8rMA" name="FileInputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMDI0UPfEeaMtams4z8rMA" name="FileNotFoundException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMDI0kPfEeaMtams4z8rMA" name="FileOutputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMDI00PfEeaMtams4z8rMA" name="IOException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMDI1EPfEeaMtams4z8rMA" name="ObjectInputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMDI1UPfEeaMtams4z8rMA" name="ObjectOutputStream"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_BMAskkPfEeaMtams4z8rMA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMAsk0PfEeaMtams4z8rMA" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMAslEPfEeaMtams4z8rMA" name="Scanner"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_BMDI1kPfEeaMtams4z8rMA" name="Date"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LHUfIkPfEeaMtams4z8rMA" name="awt">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_LHUfI0PfEeaMtams4z8rMA" name="Color"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_LHUfJEPfEeaMtams4z8rMA" name="Graphics"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_LHZXoEPfEeaMtams4z8rMA" name="*"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LHZXoUPfEeaMtams4z8rMA" name="event">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_LHZXokPfEeaMtams4z8rMA" name="*"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_BMBToEPfEeaMtams4z8rMA" name="account1">
+    <packagedElement xmi:type="uml:DataType" xmi:id="_BMBToUPfEeaMtams4z8rMA" name="Account"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_BSFfYEPfEeaMtams4z8rMA" name="ArrayList&lt;Transaction>"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_LHT4EEPfEeaMtams4z8rMA" name="geometric2">
+    <packagedElement xmi:type="uml:Class" xmi:id="_LHUfIEPfEeaMtams4z8rMA" name="MyObjectOutputStream"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_LHVGMkPfEeaMtams4z8rMA" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_LHVGM0PfEeaMtams4z8rMA" name="swing">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_LHVGNEPfEeaMtams4z8rMA" name="JPanel"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_LHW7YEPfEeaMtams4z8rMA" name="*"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_LLTnQEPfEeaMtams4z8rMA" name="File"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_LNYq4UPfEeaMtams4z8rMA" name="JButton"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_LN-gwUPfEeaMtams4z8rMA" name="JTextField"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_LRkAREPfEeaMtams4z8rMA" name="ActionEvent"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_PN4r4EPfEeaMtams4z8rMA" name="ArrayList&lt;Transaction>"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mQNYAUPfEeaMtams4z8rMA" name="account3">
+    <packagedElement xmi:type="uml:Class" xmi:id="_mQgS8EPfEeaMtams4z8rMA" name="ATM">
+      <generalization xmi:id="_mcuxEUPfEeaMtams4z8rMA" general="_mcuxEEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mc4iEEPfEeaMtams4z8rMA" name="errorframe" visibility="private" type="_mcuxEEPfEeaMtams4z8rMA" association="_m_PoQEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mdLdAEPfEeaMtams4z8rMA" name="errorPanel" visibility="private" type="_mZnysEPfEeaMtams4z8rMA" association="_m_QPUEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mdeX8EPfEeaMtams4z8rMA" name="keyPanel" visibility="private" type="_mZdaoEPfEeaMtams4z8rMA" association="_m_QPUkPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mdx58EPfEeaMtams4z8rMA" name="panels" visibility="private" type="_mZnysUPfEeaMtams4z8rMA" association="_m_QPVEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mgeBkEPfEeaMtams4z8rMA" name="jtadetail" visibility="private" type="_mgU3oEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mjgugEPfEeaMtams4z8rMA" name="registerPanel" visibility="private" type="_mQz08EPfEeaMtams4z8rMA" association="_m_QPVkPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mkHygEPfEeaMtams4z8rMA" name="menuPanel" visibility="private" type="_mRGv4EPfEeaMtams4z8rMA" association="_m_QPWEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mktoYEPfEeaMtams4z8rMA" name="creatPanel" visibility="private" type="_mRZq0EPfEeaMtams4z8rMA" association="_m_Q2YEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mlAjUEPfEeaMtams4z8rMA" name="withdrawPanel" visibility="private" type="_mR290EPfEeaMtams4z8rMA" association="_m_Q2YkPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mo5k0EPfEeaMtams4z8rMA" name="accounts" visibility="private" type="_movz0EPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mpCuwEPfEeaMtams4z8rMA" name="depoistPanel" visibility="private" type="_mSczsEPfEeaMtams4z8rMA" association="_m_Q2ZEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mpVpsEPfEeaMtams4z8rMA" name="detailPanel" visibility="private" type="_mSvuoEPfEeaMtams4z8rMA" association="_m_Q2ZkPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mppLsEPfEeaMtams4z8rMA" name="changpassPanel" visibility="private" type="_mTDQoEPfEeaMtams4z8rMA" association="_m_Q2aEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mpyVoEPfEeaMtams4z8rMA" name="account" visibility="private" type="_mbSmtEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_mqFQkEPfEeaMtams4z8rMA" name="card" visibility="private">
+        <type xmi:type="uml:DataType" href="../uml.uml#_mbSmo0PfEeaMtams4z8rMA"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_mQz08EPfEeaMtams4z8rMA" name="Register" visibility="package">
+        <ownedAttribute xmi:id="_mqrtgEPfEeaMtams4z8rMA" name="enterPanel" visibility="private" type="_mqYykEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mq-ocEPfEeaMtams4z8rMA" name="chiocePane" visibility="private" type="_mqYykEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mrRjYEPfEeaMtams4z8rMA" name="nameField" visibility="private" type="_mrIZcEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mrkeUEPfEeaMtams4z8rMA" name="passwField" visibility="private" type="_mrbUYEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mr4AUEPfEeaMtams4z8rMA" name="registerButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_msBKQEPfEeaMtams4z8rMA" name="creatButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_mQ8-4EPfEeaMtams4z8rMA" name="ButtonListener" visibility="package"/>
+        <ownedOperation xmi:id="_msK7QkPfEeaMtams4z8rMA" name="register" visibility="public">
+          <ownedParameter xmi:id="_msK7Q0PfEeaMtams4z8rMA" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_msK7REPfEeaMtams4z8rMA" name="password">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_msK7RUPfEeaMtams4z8rMA" name="return" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_mRGv4EPfEeaMtams4z8rMA" name="MenuPanel" visibility="package">
+        <generalization xmi:id="_msUFMUPfEeaMtams4z8rMA" general="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_msd2MEPfEeaMtams4z8rMA" name="funcPanel1" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_msxYMEPfEeaMtams4z8rMA" name="funcPanel2" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mtETIEPfEeaMtams4z8rMA" name="withDrawB" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mtYcMEPfEeaMtams4z8rMA" name="changePasswB" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mtrXIEPfEeaMtams4z8rMA" name="depositB" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mt0hEEPfEeaMtams4z8rMA" name="detailB" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_muIqIEPfEeaMtams4z8rMA" name="exitB" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_mRP50EPfEeaMtams4z8rMA" name="ButtonListener" visibility="package"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_mRZq0EPfEeaMtams4z8rMA" name="CreatPanel" visibility="package">
+        <generalization xmi:id="_muR0EEPfEeaMtams4z8rMA" general="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_muR0EUPfEeaMtams4z8rMA" name="nameField" visibility="private" type="_mrIZcEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mukvAEPfEeaMtams4z8rMA" name="passwField" visibility="private" type="_mrIZcEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mu4RAEPfEeaMtams4z8rMA" name="withdrawField" visibility="private" type="_mrIZcEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mvBa8EPfEeaMtams4z8rMA" name="IDField" visibility="private" type="_mrIZcEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mvUV4EPfEeaMtams4z8rMA" name="panel1" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mvet8EPfEeaMtams4z8rMA" name="panel2" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_mvxo4EPfEeaMtams4z8rMA" name="sureButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m1CjYEPfEeaMtams4z8rMA" name="exitButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_mRslwEPfEeaMtams4z8rMA" name="ButtonListener" visibility="package"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_mR290EPfEeaMtams4z8rMA" name="WithDrawPanel" visibility="package">
+        <generalization xmi:id="_m1MUYEPfEeaMtams4z8rMA" general="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m1VeUEPfEeaMtams4z8rMA" name="hButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m1fPUEPfEeaMtams4z8rMA" name="thButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m1yKQEPfEeaMtams4z8rMA" name="tButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m177QEPfEeaMtams4z8rMA" name="ttButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m2O2MEPfEeaMtams4z8rMA" name="exitButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m2YAIEPfEeaMtams4z8rMA" name="sureButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m2hxIEPfEeaMtams4z8rMA" name="panel1" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m20sEEPfEeaMtams4z8rMA" name="panel2" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m2-dEUPfEeaMtams4z8rMA" name="rankMassage" visibility="private" type="_m2-dEEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m3RYAEPfEeaMtams4z8rMA" name="panel3" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m3bJAEPfEeaMtams4z8rMA" name="amountField" visibility="private" type="_mrIZcEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m3uD8EPfEeaMtams4z8rMA" name="image" visibility="private" type="_m3kS8EPfEeaMtams4z8rMA"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_mSAHwEPfEeaMtams4z8rMA" name="textFieldListener" visibility="package"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_mSczsEPfEeaMtams4z8rMA" name="DepoistPanel" visibility="package">
+        <generalization xmi:id="_m33N4EPfEeaMtams4z8rMA" general="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m33N4UPfEeaMtams4z8rMA" name="amountField" visibility="private" type="_mrIZcEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m4A-4EPfEeaMtams4z8rMA" name="exitButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m4T50EPfEeaMtams4z8rMA" name="sureButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m4dq0EPfEeaMtams4z8rMA" name="panel3" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_mSmksEPfEeaMtams4z8rMA" name="ButtonListener" visibility="package"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_mSvuoEPfEeaMtams4z8rMA" name="DetailPanel" visibility="package">
+        <generalization xmi:id="_m4dq0UPfEeaMtams4z8rMA" general="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m4m0wEPfEeaMtams4z8rMA" name="scollBar" visibility="private" type="_m4dq0kPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m4wlwEPfEeaMtams4z8rMA" name="exitB" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m5DgsEPfEeaMtams4z8rMA" name="panel1" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m5PG4EPfEeaMtams4z8rMA" name="panel2" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_mS5foEPfEeaMtams4z8rMA" name="ButtonListener" visibility="package"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_mTDQoEPfEeaMtams4z8rMA" name="ChangpassPanel" visibility="package">
+        <generalization xmi:id="_m5UmcEPfEeaMtams4z8rMA" general="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m5YQ0EPfEeaMtams4z8rMA" name="panel1" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m5qksEPfEeaMtams4z8rMA" name="panel2" visibility="private" type="_msUFMEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m508wEPfEeaMtams4z8rMA" name="oldwordField" visibility="private" type="_mrIZcEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m6H3sEPfEeaMtams4z8rMA" name="new1Field" visibility="private" type="_mrIZcEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m6IewEPfEeaMtams4z8rMA" name="new2Field" visibility="private" type="_mrIZcEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m6gSMEPfEeaMtams4z8rMA" name="sureButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <ownedAttribute xmi:id="_m6r4YEPfEeaMtams4z8rMA" name="exitButton" visibility="private" type="_mruPUEPfEeaMtams4z8rMA"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_mTWLkEPfEeaMtams4z8rMA" name="ButtonListener" visibility="package"/>
+      </nestedClassifier>
+      <ownedOperation xmi:id="_mqPBkUPfEeaMtams4z8rMA" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_mqPBkkPfEeaMtams4z8rMA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mqPBk0PfEeaMtams4z8rMA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mqPBlEPfEeaMtams4z8rMA"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mZdaoEPfEeaMtams4z8rMA" name="KeyPanel">
+      <generalization xmi:id="_m62QcEPfEeaMtams4z8rMA" general="_msUFMEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_m64FoEPfEeaMtams4z8rMA" name="b" visibility="private" type="_mruPUEPfEeaMtams4z8rMA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m64FoUPfEeaMtams4z8rMA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m64FokPfEeaMtams4z8rMA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_m69lMEPfEeaMtams4z8rMA" name="s" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_m69lMUPfEeaMtams4z8rMA" value=""/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_mZeowEPfEeaMtams4z8rMA" name="ButtonListener" visibility="package" clientDependency="_m7AogUPfEeaMtams4z8rMA">
+        <interfaceRealization xmi:id="_m7AogUPfEeaMtams4z8rMA" name="ActionListener" supplier="_m7AogEPfEeaMtams4z8rMA" client="_mZeowEPfEeaMtams4z8rMA" contract="_m7AogEPfEeaMtams4z8rMA"/>
+        <ownedOperation xmi:id="_m7BPkEPfEeaMtams4z8rMA" name="actionPerformed" visibility="public">
+          <ownedParameter xmi:id="_m7BPkUPfEeaMtams4z8rMA" name="e">
+            <type xmi:type="uml:DataType" href="../uml.uml#_mbSmqEPfEeaMtams4z8rMA"/>
+          </ownedParameter>
+        </ownedOperation>
+      </nestedClassifier>
+      <ownedOperation xmi:id="_m6_aYEPfEeaMtams4z8rMA" name="getText" visibility="public">
+        <ownedParameter xmi:id="_m6_aYUPfEeaMtams4z8rMA" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mZnysEPfEeaMtams4z8rMA" name="ErrorJPanel">
+      <generalization xmi:id="_m78coEPfEeaMtams4z8rMA" general="_msUFMEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_m79qwEPfEeaMtams4z8rMA" name="error" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_m7_f8EPfEeaMtams4z8rMA" name="showError" visibility="public">
+        <ownedParameter xmi:id="_m7_f8UPfEeaMtams4z8rMA" name="error">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_m8BVIEPfEeaMtams4z8rMA" name="paintComponent" visibility="protected">
+        <ownedParameter xmi:id="_m8BVIUPfEeaMtams4z8rMA" name="g">
+          <type xmi:type="uml:DataType" href="../uml.uml#_mbcXoEPfEeaMtams4z8rMA"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_m8DKUEPfEeaMtams4z8rMA" name="setError" visibility="public">
+        <ownedParameter xmi:id="_m8DKUUPfEeaMtams4z8rMA" name="i">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mZnysUPfEeaMtams4z8rMA" name="Panels">
+      <generalization xmi:id="_m8EYcEPfEeaMtams4z8rMA" general="_msUFMEPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_m8FmkEPfEeaMtams4z8rMA" name="ImageIcon" visibility="private" type="_m3kS8EPfEeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_m8HbwEPfEeaMtams4z8rMA" name="image" visibility="private">
+        <type xmi:type="uml:DataType" href="../uml.uml#_mbcXoUPfEeaMtams4z8rMA"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_m8Ip4EPfEeaMtams4z8rMA" name="paintComponent" visibility="protected">
+        <ownedParameter xmi:id="_m8Ip4UPfEeaMtams4z8rMA" name="g">
+          <type xmi:type="uml:DataType" href="../uml.uml#_mbcXoEPfEeaMtams4z8rMA"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mcuxEEPfEeaMtams4z8rMA" name="JFrame"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_msUFMEPfEeaMtams4z8rMA" name="JPanel"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_m7AogEPfEeaMtams4z8rMA" name="ActionListener"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m_PoQEPfEeaMtams4z8rMA" memberEnd="_mc4iEEPfEeaMtams4z8rMA _m_PoQUPfEeaMtams4z8rMA">
+      <ownedEnd xmi:id="_m_PoQUPfEeaMtams4z8rMA" name="ATM" type="_mQgS8EPfEeaMtams4z8rMA" association="_m_PoQEPfEeaMtams4z8rMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m_QPUEPfEeaMtams4z8rMA" memberEnd="_mdLdAEPfEeaMtams4z8rMA _m_QPUUPfEeaMtams4z8rMA">
+      <ownedEnd xmi:id="_m_QPUUPfEeaMtams4z8rMA" name="ATM" type="_mQgS8EPfEeaMtams4z8rMA" association="_m_QPUEPfEeaMtams4z8rMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m_QPUkPfEeaMtams4z8rMA" memberEnd="_mdeX8EPfEeaMtams4z8rMA _m_QPU0PfEeaMtams4z8rMA">
+      <ownedEnd xmi:id="_m_QPU0PfEeaMtams4z8rMA" name="ATM" type="_mQgS8EPfEeaMtams4z8rMA" association="_m_QPUkPfEeaMtams4z8rMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m_QPVEPfEeaMtams4z8rMA" memberEnd="_mdx58EPfEeaMtams4z8rMA _m_QPVUPfEeaMtams4z8rMA">
+      <ownedEnd xmi:id="_m_QPVUPfEeaMtams4z8rMA" name="ATM" type="_mQgS8EPfEeaMtams4z8rMA" association="_m_QPVEPfEeaMtams4z8rMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m_QPVkPfEeaMtams4z8rMA" memberEnd="_mjgugEPfEeaMtams4z8rMA _m_QPV0PfEeaMtams4z8rMA">
+      <ownedEnd xmi:id="_m_QPV0PfEeaMtams4z8rMA" name="ATM" type="_mQgS8EPfEeaMtams4z8rMA" association="_m_QPVkPfEeaMtams4z8rMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m_QPWEPfEeaMtams4z8rMA" memberEnd="_mkHygEPfEeaMtams4z8rMA _m_QPWUPfEeaMtams4z8rMA">
+      <ownedEnd xmi:id="_m_QPWUPfEeaMtams4z8rMA" name="ATM" type="_mQgS8EPfEeaMtams4z8rMA" association="_m_QPWEPfEeaMtams4z8rMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m_Q2YEPfEeaMtams4z8rMA" memberEnd="_mktoYEPfEeaMtams4z8rMA _m_Q2YUPfEeaMtams4z8rMA">
+      <ownedEnd xmi:id="_m_Q2YUPfEeaMtams4z8rMA" name="ATM" type="_mQgS8EPfEeaMtams4z8rMA" association="_m_Q2YEPfEeaMtams4z8rMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m_Q2YkPfEeaMtams4z8rMA" memberEnd="_mlAjUEPfEeaMtams4z8rMA _m_Q2Y0PfEeaMtams4z8rMA">
+      <ownedEnd xmi:id="_m_Q2Y0PfEeaMtams4z8rMA" name="ATM" type="_mQgS8EPfEeaMtams4z8rMA" association="_m_Q2YkPfEeaMtams4z8rMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m_Q2ZEPfEeaMtams4z8rMA" memberEnd="_mpCuwEPfEeaMtams4z8rMA _m_Q2ZUPfEeaMtams4z8rMA">
+      <ownedEnd xmi:id="_m_Q2ZUPfEeaMtams4z8rMA" name="ATM" type="_mQgS8EPfEeaMtams4z8rMA" association="_m_Q2ZEPfEeaMtams4z8rMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m_Q2ZkPfEeaMtams4z8rMA" memberEnd="_mpVpsEPfEeaMtams4z8rMA _m_Q2Z0PfEeaMtams4z8rMA">
+      <ownedEnd xmi:id="_m_Q2Z0PfEeaMtams4z8rMA" name="ATM" type="_mQgS8EPfEeaMtams4z8rMA" association="_m_Q2ZkPfEeaMtams4z8rMA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m_Q2aEPfEeaMtams4z8rMA" memberEnd="_mppLsEPfEeaMtams4z8rMA _m_Q2aUPfEeaMtams4z8rMA">
+      <ownedEnd xmi:id="_m_Q2aUPfEeaMtams4z8rMA" name="ATM" type="_mQgS8EPfEeaMtams4z8rMA" association="_m_Q2aEPfEeaMtams4z8rMA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mbSmskPfEeaMtams4z8rMA" name="account2">
+    <packagedElement xmi:type="uml:DataType" xmi:id="_mbSms0PfEeaMtams4z8rMA" name="ATMMachine2"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_mbSmtEPfEeaMtams4z8rMA" name="Account1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_mgU3oEPfEeaMtams4z8rMA" name="JTextArea"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_movz0EPfEeaMtams4z8rMA" name="ArrayList&lt;Account1>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_mqYykEPfEeaMtams4z8rMA" name="JPanel"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_mrIZcEPfEeaMtams4z8rMA" name="JTextField"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_mrbUYEPfEeaMtams4z8rMA" name="JPasswordField"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_mruPUEPfEeaMtams4z8rMA" name="JButton"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m2-dEEPfEeaMtams4z8rMA" name="JLabel"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m3kS8EPfEeaMtams4z8rMA" name="ImageIcon"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m4dq0kPfEeaMtams4z8rMA" name="JScrollPane"/>
+</uml:Model>

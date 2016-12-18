@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="F1">
+  <packagedElement xmi:type="uml:DataType" xmi:id="_H_ajMENUEeaCZ_WUPhFKrw" name="Object"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Ya1z0ENUEeaCZ_WUPhFKrw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ya1z0UNUEeaCZ_WUPhFKrw" name="awt">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Ya1z0kNUEeaCZ_WUPhFKrw" name="Color"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Ya1z00NUEeaCZ_WUPhFKrw" name="Graphics"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_lP2XZkNUEeaCZ_WUPhFKrw" name="event">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_lP2XZ0NUEeaCZ_WUPhFKrw" name="*"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Ya1z1ENUEeaCZ_WUPhFKrw" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ya_k0ENUEeaCZ_WUPhFKrw" name="swing">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Ya_k0UNUEeaCZ_WUPhFKrw" name="*"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_lSO9AENUEeaCZ_WUPhFKrw" name="JPanel"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_lSO9A0NUEeaCZ_WUPhFKrw" name="JButton"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_lSh38UNUEeaCZ_WUPhFKrw" name="JScrollBar"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_lS0y4UNUEeaCZ_WUPhFKrw" name="Color"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_lTHt0kNUEeaCZ_WUPhFKrw" name="Graphics"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mybgQENbEeaCZ_WUPhFKrw" name="fan3">
+    <packagedElement xmi:type="uml:Class" xmi:id="_mybgQUNbEeaCZ_WUPhFKrw" name="FanControl">
+      <generalization xmi:id="_m3tB0UNbEeaCZ_WUPhFKrw" general="_m3tB0ENbEeaCZ_WUPhFKrw"/>
+      <ownedAttribute xmi:id="_m3tB00NbEeaCZ_WUPhFKrw" name="on" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_m32y0ENbEeaCZ_WUPhFKrw" name="speed" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_m32y0kNbEeaCZ_WUPhFKrw" name="controlPanel" visibility="private" type="_m32y0UNbEeaCZ_WUPhFKrw"/>
+      <ownedAttribute xmi:id="_m45UoENbEeaCZ_WUPhFKrw" name="fanPanel" visibility="private" type="_mybgQkNbEeaCZ_WUPhFKrw" association="_m9GfMENbEeaCZ_WUPhFKrw"/>
+      <ownedAttribute xmi:id="_m5DFoUNbEeaCZ_WUPhFKrw" name="startButton" visibility="private" type="_m5DFoENbEeaCZ_WUPhFKrw"/>
+      <ownedAttribute xmi:id="_m5DFokNbEeaCZ_WUPhFKrw" name="stopButton" visibility="private" type="_m5DFoENbEeaCZ_WUPhFKrw"/>
+      <ownedAttribute xmi:id="_m5MPkENbEeaCZ_WUPhFKrw" name="revButton" visibility="private" type="_m5DFoENbEeaCZ_WUPhFKrw"/>
+      <ownedAttribute xmi:id="_m5WAkENbEeaCZ_WUPhFKrw" name="speedBar" visibility="private" type="_m5MPkUNbEeaCZ_WUPhFKrw"/>
+      <ownedOperation xmi:id="_m5WAkkNbEeaCZ_WUPhFKrw" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_m5WAk0NbEeaCZ_WUPhFKrw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m5WAlENbEeaCZ_WUPhFKrw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m5WAlUNbEeaCZ_WUPhFKrw"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mybgQkNbEeaCZ_WUPhFKrw" name="FanPanel">
+      <generalization xmi:id="_m5WAl0NbEeaCZ_WUPhFKrw" general="_m5WAlkNbEeaCZ_WUPhFKrw"/>
+      <ownedAttribute xmi:id="_m5fxkENbEeaCZ_WUPhFKrw" name="degree" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_m5o7gENbEeaCZ_WUPhFKrw" name="changeDegree" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_m572cENbEeaCZ_WUPhFKrw" name="color" visibility="private" type="_m5ysgENbEeaCZ_WUPhFKrw"/>
+      <ownedOperation xmi:id="_m572cUNbEeaCZ_WUPhFKrw" name="setChangeDegree" visibility="public">
+        <ownedParameter xmi:id="_m572ckNbEeaCZ_WUPhFKrw" name="degree">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_m6FncENbEeaCZ_WUPhFKrw" name="getChangeDegree" visibility="public">
+        <ownedParameter xmi:id="_m6FncUNbEeaCZ_WUPhFKrw" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_m6FnckNbEeaCZ_WUPhFKrw" name="setColor" visibility="public">
+        <ownedParameter xmi:id="_m6Fnc0NbEeaCZ_WUPhFKrw" name="color" type="_m5ysgENbEeaCZ_WUPhFKrw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_m6FndUNbEeaCZ_WUPhFKrw" name="paintComponent" visibility="protected">
+        <ownedParameter xmi:id="_m6FndkNbEeaCZ_WUPhFKrw" name="g" type="_m6FndENbEeaCZ_WUPhFKrw"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_m6PYcENbEeaCZ_WUPhFKrw" name="radomColor" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_m6PYcUNbEeaCZ_WUPhFKrw" name="return" type="_m5ysgENbEeaCZ_WUPhFKrw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_m3tB0ENbEeaCZ_WUPhFKrw" name="JFrame"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_m5WAlkNbEeaCZ_WUPhFKrw" name="JPanel"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m9GfMENbEeaCZ_WUPhFKrw" memberEnd="_m45UoENbEeaCZ_WUPhFKrw _m9GfMUNbEeaCZ_WUPhFKrw">
+      <ownedEnd xmi:id="_m9GfMUNbEeaCZ_WUPhFKrw" name="FanControl" type="_mybgQUNbEeaCZ_WUPhFKrw" association="_m9GfMENbEeaCZ_WUPhFKrw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m32y0UNbEeaCZ_WUPhFKrw" name="JPanel"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m5DFoENbEeaCZ_WUPhFKrw" name="JButton"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m5MPkUNbEeaCZ_WUPhFKrw" name="JScrollBar"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m5ysgENbEeaCZ_WUPhFKrw" name="Color"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m6FndENbEeaCZ_WUPhFKrw" name="Graphics"/>
+</uml:Model>

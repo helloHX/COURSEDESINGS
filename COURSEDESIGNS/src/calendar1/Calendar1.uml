@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="Calendar1">
+  <packagedElement xmi:type="uml:Package" xmi:id="_UhhcQEN9EeaRuZVMy03GbQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_UhiDUEN9EeaRuZVMy03GbQ" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_UhiDUUN9EeaRuZVMy03GbQ" name="Scanner"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_iQq3ZEN-EeaRuZVMy03GbQ" name="awt">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_iQq3ZUN-EeaRuZVMy03GbQ" name="*"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_iQq3ZkN-EeaRuZVMy03GbQ" name="event">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_iQq3Z0N-EeaRuZVMy03GbQ" name="ActionEvent"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_iQq3aEN-EeaRuZVMy03GbQ" name="ActionListener"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_iQq3aUN-EeaRuZVMy03GbQ" name="ItemEvent"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_iQq3akN-EeaRuZVMy03GbQ" name="ItemListener"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_ZBWoIEN-EeaRuZVMy03GbQ" name="Calendar"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_h6JNwEN-EeaRuZVMy03GbQ" name="calendar3">
+    <packagedElement xmi:type="uml:Class" xmi:id="_h6vqsEN-EeaRuZVMy03GbQ" name="Calendar">
+      <generalization xmi:id="_iT6YoUN-EeaRuZVMy03GbQ" general="_iT6YoEN-EeaRuZVMy03GbQ"/>
+      <ownedAttribute xmi:id="_iUAfQEN-EeaRuZVMy03GbQ" name="month" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iUKQQEN-EeaRuZVMy03GbQ" name="year" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_iUKQQUN-EeaRuZVMy03GbQ" value="2016"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iUUoUEN-EeaRuZVMy03GbQ" name="monthCombox" visibility="private" type="_iUPv0EN-EeaRuZVMy03GbQ"/>
+      <ownedAttribute xmi:id="_iUgOgEN-EeaRuZVMy03GbQ" name="jtfYear" visibility="private" type="_iUbWAEN-EeaRuZVMy03GbQ"/>
+      <ownedAttribute xmi:id="_iUpYcEN-EeaRuZVMy03GbQ" name="calendarPanel" visibility="private" type="_h7AJYEN-EeaRuZVMy03GbQ" association="_idrYoEN-EeaRuZVMy03GbQ"/>
+      <ownedAttribute xmi:id="_iVWjEEN-EeaRuZVMy03GbQ" name="monthlist" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iVWjEUN-EeaRuZVMy03GbQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iVWjEkN-EeaRuZVMy03GbQ"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_iZZVkEN-EeaRuZVMy03GbQ" name="changeCalendar" visibility="private"/>
+      <ownedOperation xmi:id="_iZxwEEN-EeaRuZVMy03GbQ" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_iZxwEUN-EeaRuZVMy03GbQ" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iZxwEkN-EeaRuZVMy03GbQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iZxwE0N-EeaRuZVMy03GbQ"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_h7AJYEN-EeaRuZVMy03GbQ" name="CalendarPanel">
+      <generalization xmi:id="_iZ66AUN-EeaRuZVMy03GbQ" general="_iZ66AEN-EeaRuZVMy03GbQ"/>
+      <ownedAttribute xmi:id="_iZ-kYEN-EeaRuZVMy03GbQ" name="calendar" visibility="package" type="_h6vqsEN-EeaRuZVMy03GbQ" association="_idrYoEN-EeaRuZVMy03GbQ"/>
+      <ownedAttribute xmi:id="_iaAZkEN-EeaRuZVMy03GbQ" name="lineBorder" visibility="package" type="_iQq3b0N-EeaRuZVMy03GbQ"/>
+      <ownedOperation xmi:id="_iaKKkEN-EeaRuZVMy03GbQ" name="getStartDay" visibility="public">
+        <ownedParameter xmi:id="_iaKKkUN-EeaRuZVMy03GbQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_iadFgEN-EeaRuZVMy03GbQ" name="getMaximumDay" visibility="public">
+        <ownedParameter xmi:id="_iadFgUN-EeaRuZVMy03GbQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iT6YoEN-EeaRuZVMy03GbQ" name="JFrame"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iZ66AEN-EeaRuZVMy03GbQ" name="JPanel"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_idrYoEN-EeaRuZVMy03GbQ" memberEnd="_iUpYcEN-EeaRuZVMy03GbQ _iZ-kYEN-EeaRuZVMy03GbQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_iQq3YEN-EeaRuZVMy03GbQ" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_iQq3YUN-EeaRuZVMy03GbQ" name="swing">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_iQq3YkN-EeaRuZVMy03GbQ" name="*"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_iQq3bkN-EeaRuZVMy03GbQ" name="border">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_iQq3b0N-EeaRuZVMy03GbQ" name="Border"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_iQq3cEN-EeaRuZVMy03GbQ" name="LineBorder"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_iUPv0EN-EeaRuZVMy03GbQ" name="JComboBox"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_iUbWAEN-EeaRuZVMy03GbQ" name="JTextField"/>
+</uml:Model>

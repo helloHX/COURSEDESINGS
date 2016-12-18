@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="account">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Yoid4EPeEeaMtams4z8rMA" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Yoid4UPeEeaMtams4z8rMA" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_YojE8EPeEeaMtams4z8rMA" name="Serializable"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_YojE8UPeEeaMtams4z8rMA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_YojsAEPeEeaMtams4z8rMA" name="Date"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_YojsAUPeEeaMtams4z8rMA" name="Scanner"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_fOSC0UPeEeaMtams4z8rMA" name="account1">
+    <packagedElement xmi:type="uml:Class" xmi:id="_fOSC0kPeEeaMtams4z8rMA" name="Account" clientDependency="_fSTnMUPeEeaMtams4z8rMA">
+      <ownedAttribute xmi:id="_fVI4wUPeEeaMtams4z8rMA" name="id" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fVSCsUPeEeaMtams4z8rMA" name="balance" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fVlksEPeEeaMtams4z8rMA" name="annualInterestRate" visibility="private" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_fWLakEPeEeaMtams4z8rMA" name="dateCreated" visibility="private">
+        <type xmi:type="uml:DataType" href="../../account.uml#_fSM5gEPeEeaMtams4z8rMA"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_fSTnMUPeEeaMtams4z8rMA" name="Serializable" supplier="_fSTnMEPeEeaMtams4z8rMA" client="_fOSC0kPeEeaMtams4z8rMA" contract="_fSTnMEPeEeaMtams4z8rMA"/>
+      <ownedOperation xmi:id="_fWVLkEPeEeaMtams4z8rMA" name="setId" visibility="public">
+        <ownedParameter xmi:id="_fWVLkUPeEeaMtams4z8rMA" name="id">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fWVLkkPeEeaMtams4z8rMA" name="setBalance" visibility="public">
+        <ownedParameter xmi:id="_fWVLk0PeEeaMtams4z8rMA" name="balance">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fYyCoEPeEeaMtams4z8rMA" name="setAnnualInteRate" visibility="public">
+        <ownedParameter xmi:id="_fYyCoUPeEeaMtams4z8rMA" name="annualInterestRate">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fY1tAEPeEeaMtams4z8rMA" name="getId" visibility="public">
+        <ownedParameter xmi:id="_fY1tAUPeEeaMtams4z8rMA" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fY5-cEPeEeaMtams4z8rMA" name="getBalance" visibility="public">
+        <ownedParameter xmi:id="_fY5-cUPeEeaMtams4z8rMA" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fY9o0EPeEeaMtams4z8rMA" name="getAnnualInteRate" visibility="public">
+        <ownedParameter xmi:id="_fY9o0UPeEeaMtams4z8rMA" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZE9kUPeEeaMtams4z8rMA" name="getDate" visibility="public">
+        <ownedParameter xmi:id="_fZE9kkPeEeaMtams4z8rMA" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZJPAEPeEeaMtams4z8rMA" name="getMonthlyInterestRate" visibility="public">
+        <ownedParameter xmi:id="_fZJPAUPeEeaMtams4z8rMA" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZNgcEPeEeaMtams4z8rMA" name="withDraw" visibility="public">
+        <ownedParameter xmi:id="_fZNgcUPeEeaMtams4z8rMA" name="money">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZRx4EPeEeaMtams4z8rMA" name="deposit" visibility="public">
+        <ownedParameter xmi:id="_fZRx4UPeEeaMtams4z8rMA" name="money">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fObMwEPeEeaMtams4z8rMA" name="ATMMatchinel">
+      <ownedOperation xmi:id="_fZWqYEPeEeaMtams4z8rMA" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_fZWqYUPeEeaMtams4z8rMA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fZWqYkPeEeaMtams4z8rMA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fZWqY0PeEeaMtams4z8rMA"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZl68EPeEeaMtams4z8rMA" name="creatAccounts" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_fZl68UPeEeaMtams4z8rMA" name="return" type="_fOSC0kPeEeaMtams4z8rMA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZsBkEPeEeaMtams4z8rMA" name="menu" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_fZsBkUPeEeaMtams4z8rMA" name="account" type="_fOSC0kPeEeaMtams4z8rMA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZw6EEPeEeaMtams4z8rMA" name="withdraw" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_fZw6EUPeEeaMtams4z8rMA" name="account" type="_fOSC0kPeEeaMtams4z8rMA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fZ414EPeEeaMtams4z8rMA" name="deposit" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_fZ414UPeEeaMtams4z8rMA" name="account" type="_fOSC0kPeEeaMtams4z8rMA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_fSTnMEPeEeaMtams4z8rMA" name="Serializable"/>
+  </packagedElement>
+</uml:Model>

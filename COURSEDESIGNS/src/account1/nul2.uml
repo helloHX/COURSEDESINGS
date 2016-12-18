@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="nul2">
+  <packagedElement xmi:type="uml:Package" xmi:id="_FULScEP4EeaMtams4z8rMA" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_FULScUP4EeaMtams4z8rMA" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_FULSckP4EeaMtams4z8rMA" name="Serializable"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_FULSc0P4EeaMtams4z8rMA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_FULSdEP4EeaMtams4z8rMA" name="Date"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_FULSdUP4EeaMtams4z8rMA" name="Scanner"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Rv3-JEP4EeaMtams4z8rMA" name="awt">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Rv3-JUP4EeaMtams4z8rMA" name="*"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Rv3-JkP4EeaMtams4z8rMA" name="event">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_Rv3-J0P4EeaMtams4z8rMA" name="*"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_j7yU8UP4EeaMtams4z8rMA" name="applet">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_j7yU8kP4EeaMtams4z8rMA" name="Applet"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_j7yU80P4EeaMtams4z8rMA" name="AudioClip"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Rv3-IEP4EeaMtams4z8rMA" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Rv3-IUP4EeaMtams4z8rMA" name="swing">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Rv3-IkP4EeaMtams4z8rMA" name="*"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_j7yU_kP4EeaMtams4z8rMA" name="print">
+      <packagedElement xmi:type="uml:Package" xmi:id="_j7yU_0P4EeaMtams4z8rMA" name="DocFlavor">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_j7yVAEP4EeaMtams4z8rMA" name="URL"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_RxoRoEP4EeaMtams4z8rMA" name="JLabel"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_RyBTMEP4EeaMtams4z8rMA" name="JTextField"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_Rya70EP4EeaMtams4z8rMA" name="JPanel"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_RzDN8UP4EeaMtams4z8rMA" name="Dimension"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_RzWI4EP4EeaMtams4z8rMA" name="ActionEvent"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_Rzf54EP4EeaMtams4z8rMA" name="Graphics"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_R0KoQEP4EeaMtams4z8rMA" name="JButton"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_b7_z4EP4EeaMtams4z8rMA" name="JButton"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_b8-rUUP4EeaMtams4z8rMA" name="JLabel"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_b9bXQEP4EeaMtams4z8rMA" name="JTextField"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_b94DMEP4EeaMtams4z8rMA" name="JPanel"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_b-w0AUP4EeaMtams4z8rMA" name="Dimension"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_cC9XgEP4EeaMtams4z8rMA" name="ActionEvent"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_cDHIgkP4EeaMtams4z8rMA" name="Graphics"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_j5yJ0EP4EeaMtams4z8rMA" name="clock3">
+    <packagedElement xmi:type="uml:Class" xmi:id="_j5yw4EP4EeaMtams4z8rMA" name="alarm" clientDependency="_j7_JQUP4EeaMtams4z8rMA">
+      <generalization xmi:id="_j9IY2EP4EeaMtams4z8rMA" general="_j9IY10P4EeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_j9SJwEP4EeaMtams4z8rMA" name="currentAngle" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_j9YQYEP4EeaMtams4z8rMA" name="sp" visibility="private" type="_j543gEP4EeaMtams4z8rMA" association="_kAyJsEP4EeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_j9kdoEP4EeaMtams4z8rMA" name="minute" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_j9uOoEP4EeaMtams4z8rMA" name="second" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_j93YkEP4EeaMtams4z8rMA" name="mLength" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_j93YkUP4EeaMtams4z8rMA" value="2"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_j93Yk0P4EeaMtams4z8rMA" name="picture" visibility="private" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_j93YlEP4EeaMtams4z8rMA" value="背景.png"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_j-BJkUP4EeaMtams4z8rMA" name="jtTimes" visibility="private" type="_j-BJkEP4EeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_j-KTgUP4EeaMtams4z8rMA" name="jbBegain" visibility="private" type="_j-KTgEP4EeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_j-VSoEP4EeaMtams4z8rMA" name="timer" visibility="private" type="_j-UrkEP4EeaMtams4z8rMA"/>
+      <ownedAttribute xmi:id="_j-VSoUP4EeaMtams4z8rMA" name="audioClip" visibility="private" type="_j7yU80P4EeaMtams4z8rMA"/>
+      <interfaceRealization xmi:id="_j7_JQUP4EeaMtams4z8rMA" name="ActionListener" supplier="_j7_JQEP4EeaMtams4z8rMA" client="_j5yw4EP4EeaMtams4z8rMA" contract="_j7_JQEP4EeaMtams4z8rMA"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_j510MEP4EeaMtams4z8rMA" name="FlagAnthemPanel" visibility="package">
+        <ownedAttribute xmi:id="_j-oNkEP4EeaMtams4z8rMA" name="image" visibility="private">
+          <type xmi:type="uml:DataType" href="../../nul2.uml#_j7yU-UP4EeaMtams4z8rMA"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_j-oNkUP4EeaMtams4z8rMA" name="paintComponent" visibility="public">
+          <ownedParameter xmi:id="_j-oNkkP4EeaMtams4z8rMA" name="g">
+            <type xmi:type="uml:DataType" href="../../nul2.uml#_j7yU-EP4EeaMtams4z8rMA"/>
+          </ownedParameter>
+        </ownedOperation>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_j543gEP4EeaMtams4z8rMA" name="Sclock" visibility="package">
+        <ownedOperation xmi:id="_j-x-kEP4EeaMtams4z8rMA" name="paintComponent" visibility="public">
+          <ownedParameter xmi:id="_j-x-kUP4EeaMtams4z8rMA" name="g">
+            <type xmi:type="uml:DataType" href="../../nul2.uml#_j7yU-EP4EeaMtams4z8rMA"/>
+          </ownedParameter>
+        </ownedOperation>
+      </nestedClassifier>
+      <ownedOperation xmi:id="_j-fDoEP4EeaMtams4z8rMA" name="actionPerformed" visibility="public">
+        <ownedParameter xmi:id="_j-fDoUP4EeaMtams4z8rMA" name="e">
+          <type xmi:type="uml:DataType" href="../../nul2.uml#_j7yU-0P4EeaMtams4z8rMA"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_j-fDokP4EeaMtams4z8rMA" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_j-fDo0P4EeaMtams4z8rMA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j-fDpEP4EeaMtams4z8rMA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j-fDpUP4EeaMtams4z8rMA"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_j7_JQEP4EeaMtams4z8rMA" name="ActionListener"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_j9IY10P4EeaMtams4z8rMA" name="JFrame"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kAyJsEP4EeaMtams4z8rMA" memberEnd="_j9YQYEP4EeaMtams4z8rMA _kAyJsUP4EeaMtams4z8rMA">
+      <ownedEnd xmi:id="_kAyJsUP4EeaMtams4z8rMA" name="alarm" type="_j5yw4EP4EeaMtams4z8rMA" association="_kAyJsEP4EeaMtams4z8rMA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_j-BJkEP4EeaMtams4z8rMA" name="JTextField"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_j-KTgEP4EeaMtams4z8rMA" name="JButton"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_j-UrkEP4EeaMtams4z8rMA" name="Timer"/>
+</uml:Model>
